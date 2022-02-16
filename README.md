@@ -22,3 +22,15 @@ The next set of columns are the climatological circulation metrics $M_c$ (see Se
 - `mse1000`/`mse850`: 1000 hPa and 850 hPa moist static energy, respectively
 
 The final set of columns are the calculated correlations $\rho^{IM,mod}$ and $\rho^{IO}$ (see Section S4). Column names are "`[varname]_[timing/ammount]_corr`". "Timing" correlations are the timing of the peak of a given variability and the timing of peak rainfall, "amount" correlations are the peak of the circulation variable and the total rainfall in a season.  
+
+## Structure of `peaks_alt*.nc`
+`peaks-alt*.nc` contains the raw calculated peaks for each model for a particular variable in each file, for both the climatological peaks and the peaks in every year. Filenames are of the form `peaks-alt_[varname]_allmods_historical_*.nc`. 
+
+Each file contains four variables: 
+- `clim_timing`: the day of peak for a variable for either the first half of the year (season 1) or the second half of the year (season 2); see Section S2 for details
+- `clim_amount`: the peak amount of a variable for each half of the year
+- `byyr_timing`: the day of peak for each year in the sample
+- `byyr_amount`: the peak amount for each year in the sample
+
+## Structure of `prstats_ann_allmods_1981-2013_HoAfr-bimod-land.nc`
+`prstats_ann_allmods_1981-2013_HoAfr-bimod-land.nc` contains the year-by-year precipitation stats (see Section S1 for details of calculations) for CMIP6 models and CHIRPS observations (listed as `obs` in the model dimension). Climatological precipitation stats are in the `pr_*` columns in `all_stats.csv`. Stats are calculated at the pixel level, and then averaged across all pixels in the bimodal region to create one value for each model, year, and season.  
