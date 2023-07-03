@@ -1,5 +1,5 @@
 # Data storage for "Understanding CMIP6 biases in the representation of the Greater Horn of Africa long and short rains"
-Rainfall statistics, climatological circulation metrics, and correlations calculated for the research in (Schwarzwald et al.)[https://link.springer.com/article/10.1007/s00382-022-06622-5], published in Climate Dynamics.
+Rainfall statistics, climatological circulation metrics, and correlations calculated for the research in [Schwarzwald et al.](https://link.springer.com/article/10.1007/s00382-022-06622-5), published in Climate Dynamics.
 
 ## Structure of `all_stats.csv`
 `all_stats.csv` contains all precipitation statistics, circulation metrics, and correlations calculated for "Understanding CMIP6 biases in the representation of the Greater Horn of Africa long and short rains". 
